@@ -1,0 +1,6 @@
+@smart_smca_HostAddress = http://localhost:5201
+
+GET {{smart_smca_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
