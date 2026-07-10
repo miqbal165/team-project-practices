@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("smart-smca")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+358dc761326e697bf8fc7f54fb77375c84a9a8b8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c85ccc151461356db70cbb0b64cefcdeea6190f2")]
 [assembly: System.Reflection.AssemblyProductAttribute("smart-smca")]
 [assembly: System.Reflection.AssemblyTitleAttribute("smart-smca")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
