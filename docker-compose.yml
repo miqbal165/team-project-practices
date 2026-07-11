@@ -6,7 +6,7 @@
     environment:
       POSTGRES_DB: calibration_scheduler
       POSTGRES_USER: app_user
-      POSTGRES_PASSWORD: devpassword123
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
     ports:
       - "5432:5432"
     volumes:
@@ -18,7 +18,7 @@
       interval: 5s
       timeout: 5s
       retries: 5
-  
+
   # API BE
   smart-smca:
     image: smart-smca
@@ -30,7 +30,7 @@
         condition: service_healthy
     networks:
       - calibration-scheduler-network
-    # profiles: ["api"] 
+    # profiles: ["api"]
 
 networks:
   calibration-scheduler-network:
