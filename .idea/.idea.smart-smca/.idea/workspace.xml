@@ -17,12 +17,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="659ece96-4330-467a-95d9-2cf54d59a23e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/smart-smca/Enums/MachineStatus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smart-smca/Models/MachineUnits.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.smart-smca/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.smart-smca/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.smart-smca/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smart-smca/Models/MachineModels.cs" beforeDir="false" afterPath="$PROJECT_DIR$/smart-smca/Models/MachineModels.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.smart-smca/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.smart-smca/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smart-smca.sln" beforeDir="false" afterPath="$PROJECT_DIR$/smart-smca.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
