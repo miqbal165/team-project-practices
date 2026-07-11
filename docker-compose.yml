@@ -1,0 +1,40 @@
+﻿services:
+  # DB
+  postgres:
+    image: postgres:16-alpine
+    container_name: calibration-scheduler-postgres
+    environment:
+      POSTGRES_DB: calibration_scheduler
+      POSTGRES_USER: app_user
+      POSTGRES_PASSWORD: devpassword123
+    ports:
+      - "5432:5432"
+    volumes:
+      - calibration-scheduler-pgdata:/var/lib/postgresql/data
+    networks:
+      - calibration-scheduler-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U app_user -d calibration_scheduler"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+  
+  # API BE
+  smart-smca:
+    image: smart-smca
+    build:
+      context: .
+      dockerfile: smart-smca/Dockerfile
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - calibration-scheduler-network
+    # profiles: ["api"] 
+
+networks:
+  calibration-scheduler-network:
+    driver: bridge
+
+volumes:
+  calibration-scheduler-pgdata:
